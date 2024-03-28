@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color:  background-color: #6F4E37;
+}
+
+
+
+.zai-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+ 
+
+<body>
+  <header>
+     <img src="DEVELOPMENT.jpg" alt="Banner Image">
+  </header>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
+
+    <div class="w3-right w3-hide-small">
+      <a href="#team" class="zai-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#work" class="zai-bar-item w3-button"></i> PROJECTS </a>
+      <a href="#contact" class="zai-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+ 
+
+    <a href="javascript:void(0)" class="zai-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="zai_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<nav class="zai-sidebar za-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="zai_close()" class="w3-zai-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="zai_close()" class="zai-item w3-button">ABOUT</a>
+  <a href="#team" onclick="zai_close()" class="zai-item w3-button">TEAM</a>
+  <a href="#work" onclick="zai_close()" class="zai-item w3-button">WORK</a>
+  <a href="#contact" onclick="zai_close()" class="zai-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="icecream.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>UNIT PROJECT: FAVORITE ICE CREAM FLAVORS</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p> Created a page regarding different ice cream flavors </p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> GO TO PAGE </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="hire.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p></p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> GO TO PAGE </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="papas.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p></p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> GO TO PAGE </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="tvd.png" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p></p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> GO TO PAGE </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+var mySidebar = document.getElementById("mySidebar");
+
+function zai_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+function zai_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
